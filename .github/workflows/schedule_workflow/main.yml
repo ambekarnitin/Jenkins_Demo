@@ -1,0 +1,14 @@
+name: schedule_cronjob
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 07 * * *" # Runs at 00:00 # minute, hour, date, month, week UTC, IST
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print massage
+        run: echo "no issues found in script"
