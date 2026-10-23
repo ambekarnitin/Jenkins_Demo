@@ -1,4 +1,4 @@
-name: schedule_cronjob
+name: schedule cronjob
 
 on:
   workflow_dispatch:
